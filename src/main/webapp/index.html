@@ -1,11 +1,28 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Start Page</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    </head>
-    <body>
-        <h1>Welcome to COMP367</h1>
-   
-    </body>
+<html lang="en-US">
+ 
+<head>
+    <title>Today's Date</title>
+</head>
+ 
+<body>
+  
+  <script>
+      let d = new Date();
+      var curTime = d.getHours();
+	 if (curTime < 12) {
+      document.body.innerHTML = "<h1> Good Morning Runali! Welcome to Comp 367!</h1>"
+      }
+      
+     else if (curTime < 18){
+     document.body.innerHTML = "<h1> Good Afternoon Runali! Welcome to Comp 367!</h1>"
+     }
+     else {
+     document.body.innerHTML = "<h1> Good Evening Runali! Welcome to Comp 367!</h1>"
+     }
+     
+  </script>
+ 
+</body>
+ 
 </html>
